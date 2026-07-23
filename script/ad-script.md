@@ -1,45 +1,80 @@
-# MindsHub AI — 60-Second Ad Script
-
-**Format:** Mid-roll sponsorship  
-**Target audience:** Rust developers  
-**Length:** ~65 seconds at tutorial pacing (~130 words)
+# MindsHub — 60–70 Second Ad Script
+### *For integration in a Rust tutorial*
 
 ---
 
-## SCRIPT
+## CONCEPT
 
-*"Before we jump back in — quick word from today's sponsor, MindsHub AI.*
+Pivot mid-tutorial, organic not salesy:
+> "Before we keep going — I want to show you something I've been using on this project."
 
-*MindsHub is a desktop AI workspace where you describe what you need in plain English, and it comes back done. You connect your tools once — GitHub, your database, Gmail, Linear, whatever you use — and then you just delegate. It reads your data, figures out the steps on its own, and hands you a finished result.*
+---
 
-*Watch this — I'm going to ask it to look at the open issues in a Rust repo, find the patterns, and write a status update I can drop straight into a README.*
+## ON-SCREEN DEMO (step by step)
 
-*[pause — let it run on screen]*
+**The task:** Ask MindsHub to read the open issues in this repo, find the patterns, and write a status update.
 
-*That's it. No prompt engineering. No switching between five tabs. No copy-pasting context. It just… works.*
+### Step 1 — Open MindsHub Cowork *(~3 sec)*
+Show the app open. Dark theme, clean workspace. Let the UI land.
 
-*It's free to start — five million tokens a month, no credit card. And Pro unlocks every major model — Claude, GPT-4o, Gemini — for $9.95 a month. Right now that's an intro rate, so worth locking in.*
+### Step 2 — Show the connected GitHub repo *(~4 sec)*
+Open the Connected Apps panel — GitHub is already wired in.
+Point at it briefly: "It already knows about this project."
 
-*Link is in the description. Okay — back to Rust."*
+### Step 3 — Type the task in plain English *(~5 sec)*
+Type this prompt:
+> *"Look at the open issues in rust-systems-tracker, find the 3 most common problems people are running into, and write a short status update I can post."*
+
+### Step 4 — Watch it work *(~8 sec)*
+Let the activity stream run — "Reading issues… Grouping by theme… Writing summary…"
+Stay quiet here. Silence sells the demo.
+
+### Step 5 — Show the finished artifact *(~5 sec)*
+A polished markdown status update appears. Point at it — don't read it out loud.
+
+---
+
+## SCRIPT (say this verbatim or close to it)
+
+> *"Quick break — this is actually relevant to what we're building.*
+>
+> *MindsHub is a desktop app where you describe a project in plain English and it comes back done. You connect your tools once — GitHub, your database, Gmail, whatever — and then just delegate. It figures out the steps, does the work, and hands you a finished result.*
+>
+> *Watch this — I'm going to ask it to go through the open issues in this repo, find what's actually blocking people, and write me a status update. [pause — let it run] That's it. No copy-pasting between tabs, no prompt engineering, no API wrangling.*
+>
+> *It's free to start — five million tokens a month. Or if you'd rather use your own API keys for Claude, GPT, Gemini, whatever you already have — you can do that too, completely free, no limits. Pro is $9.95 and unlocks every model in the catalog if you don't want to manage your own keys. Link's in the description.*
+>
+> *Okay — back to Rust."*
+
+---
+
+## TIMING BREAKDOWN
+
+| Time     | Action                                              |
+|----------|-----------------------------------------------------|
+| 0–4s     | Open MindsHub, say "Quick break"                   |
+| 4–18s    | Explain what it is while showing the UI             |
+| 18–38s   | Type the task, show it run (stay quiet)             |
+| 38–50s   | Show the result, say "That's it"                   |
+| 50–65s   | Pricing — free tier, BYOK, Pro $9.95, CTA          |
+| 65–68s   | "Okay, back to Rust"                               |
 
 ---
 
 ## DELIVERY NOTES
 
-- **Pause for 3–4 seconds** while the demo runs — silence sells the tool
-- Say "five million tokens" clearly — it's a strong free tier, emphasize it
-- "$9.95" and "intro rate" create urgency — don't mumble them
-- End with "Okay — back to Rust" to snap viewers back into the tutorial mindset
+- **Don't rush the demo.** 3–5 seconds of silence while MindsHub works is the best selling moment.
+- **Show the Connected Apps panel.** A developer immediately understands "connect once, use everywhere."
+- **The BYOK line matters.** Rust devs are skeptical of SaaS — knowing they can use their own OpenAI/Anthropic key lands differently than "here's another subscription."
+- **"Back to Rust" is the closer.** It signals the ad is over and you're in control of your content.
 
 ---
 
-## ALTERNATE OPENINGS (A/B test these)
+## ALTERNATE DEMO TASKS (pick one that fits your tutorial topic)
 
-**Version A (curiosity):**
-> *"Real quick — something that's been saving me hours every week..."*
-
-**Version B (authority):**
-> *"I don't do a lot of sponsor segments, but this one I actually use..."*
-
-**Version C (problem-first):**
-> *"You know what's more annoying than fighting the borrow checker? Manually digging through GitHub issues. Let me show you a fix..."*
+| If your tutorial covers… | Use this prompt instead |
+|---|---|
+| Ownership / borrowing | *"Read the open issues in rust-systems-tracker and write a beginner-friendly explanation of why the memory leak issue in #1 is a common Rust footgun."* |
+| Async / Tokio | *"Summarize the async-related issues in rust-systems-tracker and write a brief roadmap for fixing them."* |
+| CLI tools | *"Read the open issues and write a CHANGELOG entry covering the bugs fixed and features planned."* |
+| Error handling | *"Find all the panic/unwrap issues in rust-systems-tracker and write a refactoring plan using proper error handling."* |
