@@ -1,0 +1,82 @@
+{
+  "repo": "example-rust-project",
+  "description": "Sample issues used in the MindsHub demo. Use this as your linked repo or reference for the recording.",
+  "open_issues": [
+    {
+      "number": 42,
+      "title": "Borrow checker error when passing Vec<String> into async closure",
+      "body": "Getting E0502 when I try to pass a mutable reference into an async block. Tried wrapping in Arc<Mutex<>> but still confused about the right pattern.",
+      "labels": [
+        "help wanted",
+        "async",
+        "borrow-checker"
+      ],
+      "comments": 7
+    },
+    {
+      "number": 38,
+      "title": "Compilation fails on Windows with MSVC toolchain",
+      "body": "Works fine on Linux/macOS but fails to compile on Windows using the MSVC toolchain. Error is in the `cc` crate. Steps to reproduce included.",
+      "labels": [
+        "bug",
+        "windows",
+        "build"
+      ],
+      "comments": 12
+    },
+    {
+      "number": 35,
+      "title": "tokio::spawn panics with 'called outside of Tokio runtime'",
+      "body": "Trying to spawn tasks in a library function but keep hitting this panic. Not clear how to propagate the runtime context.",
+      "labels": [
+        "async",
+        "tokio",
+        "help wanted"
+      ],
+      "comments": 5
+    },
+    {
+      "number": 31,
+      "title": "Documentation unclear on lifetime annotations in trait bounds",
+      "body": "The examples in the README don't explain when you need 'static vs named lifetimes in trait bounds. A few more examples would help.",
+      "labels": [
+        "documentation",
+        "lifetimes"
+      ],
+      "comments": 3
+    },
+    {
+      "number": 28,
+      "title": "serde_json deserialization fails silently on missing optional fields",
+      "body": "Expected Option<T> to be None when the field is missing, but getting a deserialization error instead. Seems like a config issue but not sure.",
+      "labels": [
+        "bug",
+        "serde",
+        "help wanted"
+      ],
+      "comments": 9
+    },
+    {
+      "number": 24,
+      "title": "Feature request: add CLI flag to disable color output",
+      "body": "Running in CI pipelines where ANSI color codes break log parsing. Would love a --no-color flag or CLICOLOR=0 support.",
+      "labels": [
+        "enhancement",
+        "cli"
+      ],
+      "comments": 2
+    },
+    {
+      "number": 19,
+      "title": "Async trait methods not working with dyn dispatch",
+      "body": "Tried using async fn in a trait with Box<dyn MyTrait> but the compiler won't allow it. Is async-trait crate the only solution?",
+      "labels": [
+        "async",
+        "traits",
+        "help wanted"
+      ],
+      "comments": 11
+    }
+  ],
+  "note": "This is demo data. When recording, you can use a real Rust repo from your GitHub account, or link this data file to MindsHub as a reference."
+}
